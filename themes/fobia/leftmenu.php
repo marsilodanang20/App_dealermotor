@@ -21,7 +21,8 @@ if (session_status() == PHP_SESSION_NONE) {
         <li>
             <a href="dashboard/index.php">
                 <div class="parent-icon">
-                    <i class="lni lni-display-alt"></i>
+                    <!-- Ganti ikon dengan ikon dashboard -->
+                    <ion-icon name="speedometer-outline"></ion-icon>
                 </div>
                 <div class="menu-title">Dashboard</div>
             </a>
@@ -40,12 +41,39 @@ if (session_status() == PHP_SESSION_NONE) {
                 if ($level == 'Admin') {
                     // Untuk Admin, tampilkan semua menu kecuali Login dan Users
                     if ($item !== 'Login' && $item !== 'Users') {
-                        echo '<li><a href="../' . strtolower($item) . '">
-                                <div class="parent-icon">
-                                    <ion-icon name="document-text-outline"></ion-icon>
-                                </div>
-                                <div class="menu-title">Data ' . $item . '</div>
-                              </a></li>';
+                        if ($item === 'Customer') {
+                            echo '<li><a href="../' . strtolower($item) . '">
+                                    <div class="parent-icon">
+                                        <!-- Ikon untuk Data Customer -->
+                                        <ion-icon name="person-add-outline"></ion-icon>
+                                    </div>
+                                    <div class="menu-title">Data ' . $item . '</div>
+                                  </a></li>';
+                        } elseif ($item === 'Produk') {
+                            echo '<li><a href="../' . strtolower($item) . '">
+                                    <div class="parent-icon">
+                                        <!-- Ikon untuk Data Produk -->
+                                        <ion-icon name="cube-outline"></ion-icon>
+                                    </div>
+                                    <div class="menu-title">Data ' . $item . '</div>
+                                  </a></li>';
+                        } elseif ($item === 'Transaksi') {
+                            echo '<li><a href="../' . strtolower($item) . '">
+                                    <div class="parent-icon">
+                                        <!-- Ikon untuk Data Transaksi -->
+                                        <ion-icon name="cash-outline"></ion-icon>
+                                    </div>
+                                    <div class="menu-title">Data ' . $item . '</div>
+                                  </a></li>';
+                        } else {
+                            echo '<li><a href="../' . strtolower($item) . '">
+                                    <div class="parent-icon">
+                                        <!-- Ikon umum untuk Data lainnya -->
+                                        <ion-icon name="document-text-outline"></ion-icon>
+                                    </div>
+                                    <div class="menu-title">Data ' . $item . '</div>
+                                  </a></li>';
+                        }
                     }
                 }
                 elseif ($level == 'Kasir') {
@@ -53,6 +81,7 @@ if (session_status() == PHP_SESSION_NONE) {
                     if ($item !== 'Produk') {
                         echo '<li><a href="../' . strtolower($item) . '">
                                 <div class="parent-icon">
+                                    <!-- Ikon umum untuk Data -->
                                     <ion-icon name="document-text-outline"></ion-icon>
                                 </div>
                                 <div class="menu-title">Data ' . $item . '</div>
@@ -64,7 +93,8 @@ if (session_status() == PHP_SESSION_NONE) {
                     if ($item === 'Produk') {
                         echo '<li><a href="../' . strtolower($item) . '">
                                 <div class="parent-icon">
-                                    <ion-icon name="document-text-outline"></ion-icon>
+                                    <!-- Ikon untuk Produk -->
+                                    <ion-icon name="cube-outline"></ion-icon>
                                 </div>
                                 <div class="menu-title">Data ' . $item . '</div>
                               </a></li>';
@@ -75,6 +105,7 @@ if (session_status() == PHP_SESSION_NONE) {
             // Menangani kasus jika session['level'] belum ada
             echo '<li><a href="../login.php">
                     <div class="parent-icon">
+                        <!-- Ikon untuk Login -->
                         <ion-icon name="log-in-outline"></ion-icon>
                     </div>
                     <div class="menu-title">Login</div>
@@ -85,7 +116,8 @@ if (session_status() == PHP_SESSION_NONE) {
         <li>
             <a href="../logout.php">
                 <div class="parent-icon">
-                    <ion-icon name="document-text-outline"></ion-icon>
+                    <!-- Ikon untuk Log Out -->
+                    <ion-icon name="log-out-outline"></ion-icon>
                 </div>
                 <div class="menu-title">Log Out</div>
             </a>
