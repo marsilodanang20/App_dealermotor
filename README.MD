@@ -30,7 +30,7 @@
 
 	http://localhost/phpmyadmin/
 
-	Klik Database > New > Buat database dengan nama motor
+	Klik Database > New > Buat database dengan nama: motor
 
 	Pilih database motor di folder basdat/db/motor.sql
 
