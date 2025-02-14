@@ -14,13 +14,14 @@
         <li>
             <a href="basdat/login.php">
               <div class="parent-icon">
-              <i class="lni lni-display-alt"></i>
+              <i class="bi bi-person"></i> <!-- Ganti ikon login -->
               </div>
               <div class="menu-title">Login</div>
             </a>
           </li>
-          
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
       </ul>
       <!--end navigation-->
-    </aside>
-    <!--end sidebar -->
+</aside>
+<!--end sidebar -->
