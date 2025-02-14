@@ -1,4 +1,4 @@
-# Menjalankan Project CRUD Penjualan Sepeda Motor, Tugas Akhir Matakuliah Basis Data Lanjut:
+# Menjalankan Project CRUD Penjualan Sepeda Motor/ App_dealermotor:
 
 1. Persiapan
 
