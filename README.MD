@@ -16,9 +16,9 @@
 
 	Download folder dan pastikan folder bernama: basdat
 
-	Pindahkan folder basdat ke dalam direktori htdocs:
+	Pindahkan folder basdat ke dalam direktori htdocs pada xampp:
 
-	contoh: C:\xampp\htdocs\
+	contoh: C:\xampp\htdocs\>masukkan folder yang sudah di download 
 
    b. Import Database ke phpMyAdmin
 
