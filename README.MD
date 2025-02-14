@@ -1,4 +1,4 @@
-Menjalankan Project CRUD Penjualan Sepeda Motor, Tugas Akhir Matakuliah Basis Data Lanjut:
+# Menjalankan Project CRUD Penjualan Sepeda Motor, Tugas Akhir Matakuliah Basis Data Lanjut:
 
 1. Persiapan
 
@@ -14,11 +14,11 @@ Menjalankan Project CRUD Penjualan Sepeda Motor, Tugas Akhir Matakuliah Basis Da
 
    a. Masukkan Folder ke htdocs
 
-	Download atau copy folder basdat
+	Download folder dan pastikan folder bernama: basdat
 
-	Pindahkan folder basdat ke dalam direktori:
+	Pindahkan folder basdat ke dalam direktori htdocs:
 
-	C:\xampp\htdocs\
+	contoh: C:\xampp\htdocs\
 
    b. Import Database ke phpMyAdmin
 
@@ -32,7 +32,7 @@ Menjalankan Project CRUD Penjualan Sepeda Motor, Tugas Akhir Matakuliah Basis Da
 
 	Klik Database > New > Buat database dengan nama motor
 
-	Pilih database motor di folder basdat
+	Pilih database motor di folder basdat/db/motor.sql
 
 	Klik Import > Pilih file motor.sql > Klik Go
 
@@ -63,6 +63,6 @@ Menjalankan Project CRUD Penjualan Sepeda Motor, Tugas Akhir Matakuliah Basis Da
 
 	Buka browser dan akses:
 
-	http://localhost/basdat_motor/
+	http://localhost/basdat/
 
 	Project siap digunakan! 🎉
